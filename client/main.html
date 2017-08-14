@@ -1,0 +1,49 @@
+<head>
+  <title>eWi</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+</head>
+
+<body>
+  {{> PageHead}}
+  {{> message}}
+  {{> PageFoot}}
+</body>
+
+<template name="PageHead">
+    <!--<nav class="flex-between header">-->
+        <!--<p>微信</p>-->
+        <!--<div>-->
+            <!--<i class="mr-10 glyphicon glyphicon-search"></i>-->
+            <!--<i class="glyphicon glyphicon-plus"></i>-->
+        <!--</div>-->
+    <!--</nav>-->
+    <nav class="flex-between header">
+        <p class="glyphicon glyphicon-menu-left">花花</p>
+        <i class="glyphicon glyphicon-user"></i>
+    </nav>
+</template>
+<template name="message">
+    <div class="content">
+        <div class="hua">
+            <img class="m-img" src="../images/l.png">
+            <div class="text">
+                <i class="glyphicon glyphicon-triangle-left mr-own-10"></i>
+                <p class="m-text">老地方见!亲爱的~</p>
+            </div>
+        </div>
+        <div class="me">
+            <div class="text">
+                <p class="m-text">这么好!!等我呦+_+</p>
+                <i class="glyphicon glyphicon-triangle-right ml-own-10"></i>
+            </div>
+            <img class="m-img" src="../images/r.png">
+        </div>
+    </div>
+</template>
+<template name="PageFoot">
+    <div class="footer">
+        <input class="f-input" type="text">
+        <button class="btn btn-success">发送</button>
+    </div>
+</template>
