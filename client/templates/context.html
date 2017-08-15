@@ -1,0 +1,18 @@
+<template name="context">
+    {{ #each posts}}
+    <div class="hua">
+        <img class="m-img" src="../images/l.png">
+        <div class="text">
+            <i class="glyphicon glyphicon-triangle-left mr-own-10"></i>
+            <p class="m-text">{{message}}</p>
+        </div>
+    </div>
+    <div class="me">
+        <div class="text">
+            <p class="m-text">{{message}}</p>
+            <i class="glyphicon glyphicon-triangle-right ml-own-10"></i>
+        </div>
+        <img class="m-img" src="../images/r.png">
+    </div>
+    {{ /each }}
+</template>
