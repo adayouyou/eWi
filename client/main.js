@@ -1,4 +1,2 @@
 import { meteor } from 'meteor/meteor';
-
-import './main.html';
-Meteor.subscribe('posts');
+// import { Template } from 'meteor/templating';

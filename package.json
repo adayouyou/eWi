@@ -1,5 +1,5 @@
 {
-  "name": "myMeteorApp",
+  "name": "eWi",
   "private": true,
   "scripts": {
     "start": "meteor run"

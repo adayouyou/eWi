@@ -1,5 +1,14 @@
 <template name="context">
-    {{ #each posts}}
+    {{#each posts}}
+    {{#if isMe this.userName}}
+        {{>me}}
+    {{else}}
+        {{>others}}
+    {{/if}}
+    {{/each}}
+</template>
+
+<template name="others">
     <div class="hua">
         <img class="m-img" src="../images/l.png">
         <div class="text">
@@ -7,12 +16,13 @@
             <p class="m-text">{{message}}</p>
         </div>
     </div>
+</template>
+<template name="me">
     <div class="me">
         <div class="text">
-            <p class="m-text">{{message}}</p>
-            <i class="glyphicon glyphicon-triangle-right ml-own-10"></i>
+            <p class="m-text" style="background-color: #3fbe52;color: #fff;" data-value="{{userName}}">{{message}}</p>
+            <i style="color: #3fbe52;" class="glyphicon glyphicon-triangle-right ml-own-10"></i>
         </div>
         <img class="m-img" src="../images/r.png">
     </div>
-    {{ /each }}
 </template>
