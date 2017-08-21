@@ -41,9 +41,9 @@ body{
 }
 .content{
     /*margin-top: 10px;*/
-    padding: 10px;
-    margin-top: 60px;
-    margin-bottom: 60px;
+    padding: 70px 10px;
+    /*margin-top: 60px;*/
+    /*margin-bottom: 60px;*/
 }
 .m-img{
     width: 38px;
@@ -103,4 +103,31 @@ body{
     outline: none;
     border: none;
     border-bottom: 1px solid #3fbe52;
+}
+.login-other{
+    text-align: center;
+    font-size: 18px;
+    color: #3fbe52;
+}
+.login-other, .login-other li {
+    list-style: none;
+}
+.login-bgPic{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    right:0;
+    background: url("../images/timg.jpeg") no-repeat center;
+    background-size: cover;
+}
+.login-bgPic a {
+    color: #fff;
+    outline: none;
+    text-decoration: none;
+}
+.login-box{
+    width: 70%;
+    height: auto;
+    background-color: #fff;
 }
