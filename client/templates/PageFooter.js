@@ -1,0 +1,1 @@
+Template.PageFooter.events({});

@@ -1,0 +1,13 @@
+<template name="book">
+    {{>PageMHead}}
+    <div class="chat-lists">
+        <ul class="list-group">
+            {{#each books}}
+            <li class="list-group-item displayFlex">
+                <div class="h4">{{userName}}</div>
+            </li>
+            {{/each}}
+        </ul>
+    </div>
+    {{>PageFooter}}
+</template>

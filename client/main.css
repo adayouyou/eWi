@@ -131,3 +131,59 @@ body{
     height: auto;
     background-color: #fff;
 }
+.chat-lists{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.chat-lists>ul >li {
+    height: 70px;
+}
+.badge{
+    background-color: red;
+    color: #fff;
+}
+.displayFlex{
+    display: flex;
+    justify-content: space-between;
+    /*background: red;*/
+}
+.right{
+    text-align: right;
+}
+.mt10{
+    margin-top: 10px;
+}
+.h4{
+    padding: 0;
+    margin: 0;
+    font-size: 17px;
+    font-weight: 400;
+}
+.f14{
+    font-size: 13px;
+    font-weight: 200;
+    color: #555555;
+}
+.main-foot{
+    margin: 0;
+    padding: 0;
+    height: 60px;
+    line-height: 60px;
+    background: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 1px solid #3fbe52;
+}
+.main-foot,.main-foot>li {
+    list-style: none;
+}
+.main-foot>li>a{
+    color: #3fbe52;
+    outline: none;
+    width: 50px;
+    text-align: center;
+;
+}

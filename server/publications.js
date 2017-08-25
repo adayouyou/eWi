@@ -6,3 +6,6 @@ Meteor.publish('posts', (flag)=> {
     }});
     // return Posts.find({revoke: flag});
 });
+Meteor.publish('chatuser', ()=> {
+    return ChatUser.find();
+});
