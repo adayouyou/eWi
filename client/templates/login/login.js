@@ -12,7 +12,9 @@ Template.login.events({
             password: $('#password').val()
         };
         try {
-            Session.set('USER', user);
+            // 校验数据库是否存在
+            var search =ChatUser.find({userName: user.userName});
+            Session.set('USER', search);
         } catch (err) {
             throw new errors(err);
         } finally {

@@ -1,6 +1,12 @@
 <template name="context">
     <div>
-        {{> PageHead}}
+        <!--{{> PageHead}}-->
+        {{# if friendName}}
+        <nav class="flex-between header">
+            <p class="glyphicon glyphicon-menu-left">{{friendName}}</p>
+            <i class="glyphicon glyphicon-user"></i>
+        </nav>
+        {{/if}}
         <div class="content">
             {{#each posts}}
                 {{#if isMe this.userName}}

@@ -1,6 +1,15 @@
+import * as urls from '../../utils/url';
+Template.context.onCreated(() => {
+});
+
 Template.context.helpers({
+    friendName: () => {
+        var params = urls.qureyParams();
+        return params && decodeURI(params.friendName);
+    },
     posts: () => {
-        return Posts.find();
+        var params = urls.qureyParams();
+        return Posts.find({userId: Session.get('USER').userId, chatWith: params.userId});
     },
     /**
      *  判断当前登录帐户是聊天数据中的哪个
