@@ -21,6 +21,11 @@ body{
     background-color: #3fbe52;
     z-index: 2;
 }
+.c-white{
+    color: #fff;
+    outline: none;
+    text-decoration: none;
+}
 .header1{
     position: fixed;
     top:0;
@@ -126,10 +131,21 @@ body{
     outline: none;
     text-decoration: none;
 }
+.form-group label {
+    color: #fff;
+}
 .login-box{
     width: 70%;
     height: auto;
     background-color: #fff;
+}
+.login-reg{
+    margin-top: 80px;
+    display: block;
+    position: relative;
+    color: #fff;
+    text-align: center;
+    text-decoration: solid #fff;
 }
 .chat-lists{
     margin-top: 50px;

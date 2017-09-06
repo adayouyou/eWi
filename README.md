@@ -16,3 +16,6 @@ meteor
  * 分为client(客户端)和server(服务端)
  ** client 中的代码只运行在客户端,server中的代码只运行在服务端
  **collections lib public在根目录下,并不在client和server中,因此即可运行在客户端也可运行在服务器端
+
+## tips
+ *通讯录内容为所有的用户表,免去了注册这个操作

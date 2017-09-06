@@ -3,13 +3,13 @@
         <!--{{> PageHead}}-->
         {{# if friendName}}
         <nav class="flex-between header">
-            <p class="glyphicon glyphicon-menu-left">{{friendName}}</p>
+            <a class="glyphicon glyphicon-menu-left c-white" href="/book">{{friendName}}</a>
             <i class="glyphicon glyphicon-user"></i>
         </nav>
         {{/if}}
         <div class="content">
-            {{#each posts}}
-                {{#if isMe this.userName}}
+            {{#each lists}}
+                {{#if isMe this.userId}}
                     {{>me}}
                 {{else}}
                     {{>others}}

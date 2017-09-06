@@ -6,8 +6,9 @@ Template.book.helpers({
 Template.book.events({
     'click li.list-group-item': (item) => {
         var data = item.currentTarget.title && item.currentTarget.title.split('&');
-        console.log(data);
         // item.currentTarget.title  即可获取到当前点击的节点的title
-        location.href = location.origin + `/context?userId=${data[0]}&friendName=${data[1]}`;
+        // 使用session 存储当前聊天的朋友
+        Session.set('FRIEND', {'userId': data[0], 'userName': data[1]});
+        Router.go('context');
     }
 });
